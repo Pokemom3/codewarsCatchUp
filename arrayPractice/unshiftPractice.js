@@ -1,4 +1,4 @@
-const cars = [
+let cars = [
   {
     color: "purple",
     type: "minivan",
@@ -45,25 +45,19 @@ const cars = [
     color: "black",
     type: "BMW",
     registration: new Date("2021-02-16"),
-    capacity: 2,
+    capacity: 5,
   },
 ];
 
-// declare variable to keep the results in fontVariantEastAsian
-//loop over the entire array
-/// if the car capacity is less than or equal to 2
-// return string small.
-
-//if car capacity is greater than or equal to 5
-// return string "average"
-
-let seats = cars.map((car) => {
-  if (car.capacity <= 2) {
-    return "small";
-  }
-  if (car.capacity >= 5) {
-    return "average";
-  } else return "family large car";
-});
-
-console.log(seats);
+// declare new car details in a variable
+// with details in an object {}
+let car = {
+  color: "silver",
+  type: "Hyundai",
+  registration: new Date("2015-12-16"),
+  capacity: 5,
+};
+//`unshift` puts the new declared object at the front of the existing array of objects.
+cars.unshift(car);
+//console.log(array variable name) to see output.
+console.log(cars);
