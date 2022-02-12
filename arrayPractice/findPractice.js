@@ -48,11 +48,11 @@ const cars = [
     capacity: 5,
   },
 ];
-const minivan = cars.filter(function (car) {
-  //.filter returns multiple objects in an array WHEREAS .Find returns ONE matching object!
-  if (car.type === "minivan") {
-    return { car };
-  }
-});
 
-console.log(minivan);
+//Have to save the object as avariable, to be returned so declare in a variable (let)
+//find in the WHOLE array the cars that have the matching key pair(s).
+// console.log to see output otherwise return null or set up an error.
+// Double && extends conditions.
+//Double || = or
+let car = cars.find((car) => car.color === "red" || car.type === "minivan");
+console.log(car);
