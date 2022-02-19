@@ -6,6 +6,7 @@ In this repo I have worked on examples of:
  - Code Wars Katas
  - If statements
  - Arrays
+ - fetching from API's
  
  I will be going through:
  - useState
